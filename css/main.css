@@ -1,0 +1,247 @@
+body { margin: 0; padding: 0; font-family: 'Segoe UI'; }
+
+html { scroll-behavior: smooth; }
+
+.text-left { text-align: left; }
+
+.text-center { text-align: center; }
+
+.text-right { text-align: right; }
+
+.flex-center { display: flex; justify-content: center; align-items: center; }
+
+.container { max-width: 80%; }
+
+/*___________________________________________________________________________________*/
+
+::-webkit-scrollbar{ width:9px }
+::-webkit-scrollbar-track{background:#e4e4e4;border-radius:0px}
+::-webkit-scrollbar-thumb{background:rgb(39, 39, 39);border-radius:4px}
+
+.header {
+    padding: 0; 
+    position: relative;
+    max-height: 70vh;
+}
+
+.navbar {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar a {
+    text-decoration: none;
+}
+
+
+.navbar-logo {
+    background-color: #0000004D;
+    padding: 0.3rem 1rem;
+    border-radius: 0.3rem;
+}
+
+.navbar-logo img {
+    width: 48px;
+    height: auto;
+}
+
+.navbar-logo span {
+    font-size: 1.7rem;
+    color: white;
+    padding-left: 1rem;
+}
+
+.navbar-github img {
+    width: 32px;
+    height: auto;
+}
+
+.navbar-github span {
+    font-size: 1.6rem;
+    color: white;
+    padding-left: 0.4rem;
+}
+
+.parallax {
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.parallax-holder {
+    height: 70vh;
+}
+
+.parallax-header {
+    position: absolute;
+    top: 0;
+    background-image: url("../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
+    width: 100%;
+    height: 70vh;
+    z-index: -2;
+    filter: blur(0.1rem);
+}
+
+.parallax-gradient {
+    position: absolute;
+    top: 0;
+    width: 100%;
+    height: 70vh;
+    background: linear-gradient(#bf3232, #000000);
+    opacity: 50%;
+    z-index: -1;
+}
+
+.see-more {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.see-more img {
+    width: 4rem;
+    height: auto;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.see-more a:hover img {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    transition: all 300ms ease-in-out;
+}
+
+.infos {
+    height: 30vh;
+}
+
+.infos-m {
+    margin-top: 2rem;
+}
+
+.info {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #252525;
+    text-shadow: 2px 2px 5px lightgray;
+}
+
+.info img {
+    width: 2.8rem;
+    height: auto;
+    margin-left: 0.6rem;
+}
+
+.info-line {
+    border-top: 1px solid #D4D4D4;
+    margin: 1rem 0;
+}
+
+.info2 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-shadow: 2px 2px 5px lightgray;
+}
+
+.info2 img {
+    width: 3.8rem;
+    height: auto;
+    margin-right: 0.6rem;
+}
+
+.projects {
+    position: relative;
+    min-height: 90vh;
+}
+
+.projects-title {
+    font-size: 2rem;
+    font-weight: 100;
+    text-shadow: 2px 2px 5px lightgray;
+}
+
+.card {
+    width: 100%;
+    min-height: 13rem;
+    height: 100%;
+    border: 1px solid #b6b6b6;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 5px #b9b9b9;
+}
+
+.card a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title div {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-title img {
+    width: 4rem;
+    height: auto;
+}
+
+.card-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name p {
+    padding: 0.4rem;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.card-line {
+    border-top: 1px solid #dadada;
+    width: 90%;
+}
+
+.card-desc {
+    color: #686868;
+}
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 0;
+    color: gray;
+    font-weight: 100;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar { width: 90%; }
+    .see-more { font-size: 2rem; }
+    .info { font-size: 1.4rem; }
+    .info2 { font-size: 1.5rem; }
+    .infos-m { margin-top: 1rem; }
+}

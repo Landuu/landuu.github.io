@@ -1,22 +1,118 @@
 <!DOCTYPE html>
 <html>
+
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Landu</title>
+    <title>Landu @ Github.com</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
-    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
-    <script src='main.js'></script>
+    <link rel="stylesheet" href="css/bootstrap-grid.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/anims.css">
 </head>
+
 <body>
-    <div class="holder slide-in-blurred-top">
-        <img src="logo.jpg">
-        <div class="items">
-            <a href="/drukoinator">Drukoinator</a>
+    <div class="container-fluid header fade-in">
+        <nav class="navbar">
+            <a href="./">
+                <div class="navbar-logo flex-center">
+                    <img src="assets/logo.jpg" alt="@">
+                    <span>Landu</span>
+                </div>
+            </a>
+            <a href="https://github.com/Landuu" target="_blank">
+                <div class="navbar-github flex-center">
+                    <img src="assets/GitHub-Mark-Light-64px.png">
+                    <span>GitHub</span>
+                </div>
+            </a>
+        </nav>
+
+        <div class="parallax-holder">
+            <div class="parallax-gradient"></div>
+            <div class="parallax parallax-header"></div>
+        </div>
+
+        <div class="see-more flex-column">
+            <a class="fix" href="#projects">
+                <div>Zobacz wszystkie moje projekty</div>
+                <img src="assets/icon_arrow-down.svg">
+            </a>
+        </div>
+
+    </div>
+    <div class="container infos fade-in-bottom">
+        <div class="row flex-center">
+            <div class="col-md-10 col-lg-7 col-xl-6 infos-m">
+                <div class="info flex-center">
+                    Polish web "developer"
+                    <img src="assets/flag-for-poland_1f1f5-1f1f1.png">
+                </div>
+                
+                <div class="info-line"></div>
+
+                <div class="info2 flex-center">
+                    <img src="assets/icon_mail.svg">
+                    b.wiercigroch49@gmail.com
+                </div>
+            </div>
         </div>
     </div>
-    <footer>
-        Copyright &copy 2019 Bartłomiej Wiercigroch
-    </footer>
+    <div class="container projects" id="projects">
+        <div class="row mt-3">
+            <div class="col-12 text-center projects-title py-3">
+                _ Moje projekty:
+            </div>
+        </div>
+
+        <div class="row mt-5 d-flex justify-content-center">
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-title px-4 py-2">
+                        <div>2019</div>
+                        <a href="https://github.com/Landuu/drukoinator" target="_blank">
+                            <img src="assets/GitHub_Logo.png">
+                        </a>
+                    </div>
+                    <a href="/drukoinator" target="_blank">
+                        <div class="card-name flex-center flex-column">
+                            <div class="card-line"></div>
+                            <p>Drukoinator</p>
+                            <div class="card-line"></div>
+                        </div>
+                        <div class="card-desc py-3 px-4 text-center">
+                            Prosty generator czarno-białych druków wpłat bankowych. Mój pierwszy
+                            projekt w pełni opublikowany na GitHubie!
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 p-2">
+                <div class="card">
+                    <div class="card-title px-4 py-2">
+                        <div>2020?</div>
+                        <a href="#" target="_blank">
+                            <img src="assets/GitHub_Logo.png">
+                        </a>
+                    </div>
+                    <div class="card-name flex-center flex-column">
+                        <div class="card-line"></div>
+                        <p>Wehikuł czasu</p>
+                        <div class="card-line"></div>
+                    </div>
+                    <div class="card-desc py-3 px-4 text-center">
+                        Może czas na coś nowego?
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row py-4">
+            <div class="col-12 text-center copy">
+                Copyright @ 2019 Bartłomiej Wiercigroch
+            </div>
+        </div>
+    </div>
 </body>
+
 </html>
