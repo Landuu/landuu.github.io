@@ -119,6 +119,13 @@ html { scroll-behavior: smooth; }
 .see-more a {
     text-decoration: none;
     color: white;
+    text-shadow: 3px 3px 5px black;
+}
+
+.see-more a:hover img {
+    margin-top: 4px;
+    margin-bottom: -4px;
+    transition: all 300ms ease-in-out;
 }
 
 .infos {
@@ -133,6 +140,8 @@ html { scroll-behavior: smooth; }
     font-size: 1.8rem;
     font-style: italic;
     font-weight: 400;
+    color: #252525;
+    text-shadow: 2px 2px 5px lightgray;
 }
 
 .info img {
@@ -149,6 +158,7 @@ html { scroll-behavior: smooth; }
 .info2 {
     font-size: 2rem;
     font-weight: 300;
+    text-shadow: 2px 2px 5px lightgray;
 }
 
 .info2 img {
@@ -159,15 +169,66 @@ html { scroll-behavior: smooth; }
 
 .projects {
     position: relative;
-    min-height: 100vh;
+    min-height: 90vh;
 }
 
 .projects-title {
     font-size: 2rem;
     font-weight: 100;
+    text-shadow: 2px 2px 5px lightgray;
 }
 
+.card {
+    width: 100%;
+    min-height: 13rem;
+    height: 100%;
+    border: 1px solid #b6b6b6;
+    border-radius: 0.4rem;
+    box-shadow: 0 0 5px #b9b9b9;
+}
 
+.card a {
+    color: inherit;
+    text-decoration: inherit;
+}
+
+.card-title {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card-title div {
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.card-title img {
+    width: 4rem;
+    height: auto;
+}
+
+.card-title a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-name p {
+    padding: 0.4rem;
+    margin: 0;
+    font-size: 1.2rem;
+    font-weight: 300;
+}
+
+.card-line {
+    border-top: 1px solid #dadada;
+    width: 90%;
+}
+
+.card-desc {
+    color: #686868;
+}
 
 .copy {
     position: absolute;
@@ -175,4 +236,12 @@ html { scroll-behavior: smooth; }
     padding: 1.5rem 0;
     color: gray;
     font-weight: 100;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+    .navbar { width: 90%; }
+    .see-more { font-size: 2rem; }
+    .info { font-size: 1.4rem; }
+    .info2 { font-size: 1.5rem; }
+    .infos-m { margin-top: 1rem; }
 }
