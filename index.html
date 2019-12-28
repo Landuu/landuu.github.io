@@ -8,29 +8,64 @@
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link rel="stylesheet" href="css/bootstrap-grid.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/anims.css">
 </head>
 
 <body>
-    <div class="container">
+    <div class="container-fluid header fade-in">
         <nav class="navbar">
-            <div class="navbar-logo center-flex">
+            <div class="navbar-logo flex-center">
                 <img src="assets/logo.jpg" alt="@">
                 <span>Landu</span>
             </div>
-            <div class="navbar-github center-flex">
-                <img src="assets/GitHub-Mark-Light-64px.png">
-                <span>GitHub</span>
-            </div>
+            <a href="https://github.com/Landuu" target="_blank">
+                <div class="navbar-github flex-center">
+                    <img src="assets/GitHub-Mark-Light-64px.png">
+                    <span>GitHub</span>
+                </div>
+            </a>
         </nav>
+
+        <div class="parallax-holder">
+            <div class="parallax-gradient"></div>
+            <div class="parallax parallax-header"></div>
+        </div>
+
+        <div class="see-more flex-column">
+            <a class="fix" href="#projects">
+                <div>Zobacz wszystkie moje projekty</div>
+                <img src="assets/icon_arrow-down.svg">
+            </a>
+        </div>
+
     </div>
-    <div class="container-fluid parallax-holder">
-        <div class="parallax-gradient"></div>
-        <div class="parallax parallax-header"></div>
+    <div class="container infos fade-in-bottom">
+        <div class="row flex-center">
+            <div class="col-md-10 col-lg-7 col-xl-6 infos-m">
+                <div class="info flex-center">
+                    Polish web "developer"
+                    <img src="assets/flag-for-poland_1f1f5-1f1f1.png">
+                </div>
+                
+                <div class="info-line"></div>
+
+                <div class="info2 flex-center">
+                    <img src="assets/icon_mail.svg">
+                    b.wiercigroch49@gmail.com
+                </div>
+            </div>
+        </div>
     </div>
-    <div class="container">
+    <div class="container projects" id="projects">
+        <div class="row mt-3">
+            <div class="col-12 text-center projects-title py-3">
+                _ Moje projekty:
+            </div>
+        </div>
+
         <div class="row">
-            <div class="col-12">
-                Test
+            <div class="col-12 text-center copy">
+                Copyright @ 2019 Bartłomiej Wiercigroch
             </div>
         </div>
     </div>

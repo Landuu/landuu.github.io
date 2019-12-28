@@ -1,27 +1,44 @@
 body { margin: 0; padding: 0; font-family: 'Segoe UI'; }
 
+html { scroll-behavior: smooth; }
+
 .text-left { text-align: left; }
 
 .text-center { text-align: center; }
 
 .text-right { text-align: right; }
 
-.center-flex { display: flex; justify-content: center; align-items: center; }
+.flex-center { display: flex; justify-content: center; align-items: center; }
 
 .container { max-width: 80%; }
 
 /*___________________________________________________________________________________*/
 
+::-webkit-scrollbar{ width:9px }
+::-webkit-scrollbar-track{background:#e4e4e4;border-radius:0px}
+::-webkit-scrollbar-thumb{background:rgb(39, 39, 39);border-radius:4px}
+
+.header {
+    padding: 0; 
+    position: relative;
+    max-height: 70vh;
+}
+
 .navbar {
+    position: absolute;
+    top: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 70%;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    margin-top: 1rem;
 }
 
-.navbar * {
-    z-index: 1;
+.navbar a {
+    text-decoration: none;
 }
+
 
 .navbar-logo {
     background-color: #0000004D;
@@ -59,15 +76,17 @@ body { margin: 0; padding: 0; font-family: 'Segoe UI'; }
 }
 
 .parallax-holder {
-    position: absolute;
-    top: 0;
-    padding: 0;
+    height: 70vh;
 }
 
 .parallax-header {
+    position: absolute;
+    top: 0;
     background-image: url("../assets/markus-spiske-qjnAnF0jIGk-unsplash.jpg");
     width: 100%;
     height: 70vh;
+    z-index: -2;
+    filter: blur(0.1rem);
 }
 
 .parallax-gradient {
@@ -77,4 +96,83 @@ body { margin: 0; padding: 0; font-family: 'Segoe UI'; }
     height: 70vh;
     background: linear-gradient(#bf3232, #000000);
     opacity: 50%;
+    z-index: -1;
+}
+
+.see-more {
+    position: absolute;
+    bottom: 1rem;
+    left: 50%;
+    transform: translate(-50%, 0);
+    width: 90%;
+    color: white;
+    text-align: center;
+    font-size: 2.6rem;
+    font-weight: 300;
+}
+
+.see-more img {
+    width: 4rem;
+    height: auto;
+}
+
+.see-more a {
+    text-decoration: none;
+    color: white;
+}
+
+.infos {
+    height: 30vh;
+}
+
+.infos-m {
+    margin-top: 2rem;
+}
+
+.info {
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.info img {
+    width: 2.8rem;
+    height: auto;
+    margin-left: 0.6rem;
+}
+
+.info-line {
+    border-top: 1px solid #D4D4D4;
+    margin: 1rem 0;
+}
+
+.info2 {
+    font-size: 2rem;
+    font-weight: 300;
+}
+
+.info2 img {
+    width: 3.8rem;
+    height: auto;
+    margin-right: 0.6rem;
+}
+
+.projects {
+    position: relative;
+    min-height: 100vh;
+}
+
+.projects-title {
+    font-size: 2rem;
+    font-weight: 100;
+}
+
+
+
+.copy {
+    position: absolute;
+    bottom: 0;
+    padding: 1.5rem 0;
+    color: gray;
+    font-weight: 100;
 }
