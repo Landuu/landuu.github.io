@@ -180,54 +180,48 @@ html { scroll-behavior: smooth; }
 
 .card {
     width: 100%;
-    min-height: 13rem;
     height: 100%;
-    border: 1px solid #b6b6b6;
-    border-radius: 0.4rem;
-    box-shadow: 0 0 5px #b9b9b9;
+    border: 1px solid #e0e0e0;
+    box-shadow: 0 0 3px #b9b9b9;
+    padding: 0.6rem;
 }
 
-.card a {
-    color: inherit;
-    text-decoration: inherit;
+.card:hover {
+    cursor: pointer;
 }
 
 .card-title {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-}
-
-.card-title div {
-    font-size: 1.2rem;
-    font-weight: 700;
-}
-
-.card-title img {
-    width: 4rem;
-    height: auto;
-}
-
-.card-title a {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.card-name p {
-    padding: 0.4rem;
-    margin: 0;
-    font-size: 1.2rem;
-    font-weight: 300;
 }
 
 .card-line {
     border-top: 1px solid #dadada;
-    width: 90%;
+    width: 100%;
 }
 
 .card-desc {
-    color: #686868;
+    color: #575757;
+}
+
+.card-github {
+    position: absolute;
+    top: 1rem;
+    left: 2rem;
+    z-index: 10;
+}
+
+.card-app-name {
+    width: calc(100% - 5rem);
+}
+
+.card-footer {
+    width: 100%;
+    opacity: 70%;
+}
+
+.card-footer box-icon {
+    margin: 0 0.5rem;
 }
 
 .copy {
