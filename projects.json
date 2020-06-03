@@ -1,0 +1,42 @@
+[
+    {
+        "name": "Projekt strony dostawcy usług telekomunikacyjnych",
+        "github": "https://github.com/landuu/isp-website",
+        "link": "https://enet-beta.ct8.pl",
+        "desc": "Projekt strony internetowej przedstawiającej ofertę lokalnej firmy dostarczającej usługi telekomunikacyjne. Strona została stworzona przy uzyciu języka PHP oraz biblioteki Bootstrap.",
+        "icons": [
+            {
+                "name": "html5",
+                "color": "#e34f26"
+            },
+            {
+                "name": "css3",
+                "color": "#20a3fa"
+            },
+            {
+                "name": "javascript",
+                "color": "#f7df1e"
+            }
+        ]
+    },
+    {
+        "name": "Generator czarno-białych druków wpłat",
+        "github": "https://github.com/landuu/drukoinator",
+        "link": "https://landu.ml/drukoinator",
+        "desc": "Prosty generator plików pdf, zawierających czarno-białe druki wpłat bankowych. Aplikcja opiera się o JavaScript i powstała przy wykorzystaniu bibliotek takich jak: jQuery, jsPDF i UIkit 3.",
+        "icons": [
+            {
+                "name": "html5",
+                "color": "#e34f26"
+            },
+            {
+                "name": "css3",
+                "color": "#20a3fa"
+            },
+            {
+                "name": "javascript",
+                "color": "#f7df1e"
+            }
+        ]
+    }
+]
