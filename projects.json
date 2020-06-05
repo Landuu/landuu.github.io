@@ -2,7 +2,7 @@
     {
         "name": "Projekt strony dostawcy usług telekomunikacyjnych",
         "github": "https://github.com/landuu/isp-website",
-        "link": "https://enet-beta.ct8.pl",
+        "link": "https://bw-ispwebsite.ct8.pl",
         "desc": "Projekt strony internetowej przedstawiającej ofertę lokalnej firmy dostarczającej usługi telekomunikacyjne. Strona została stworzona przy uzyciu języka PHP oraz biblioteki Bootstrap.",
         "icons": [
             {
