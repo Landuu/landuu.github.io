@@ -22,7 +22,7 @@
     {
         "name": "Generator czarno-białych druków wpłat",
         "github": "https://github.com/landuu/drukoinator",
-        "link": "https://landu.ml/drukoinator",
+        "link": "/drukoinator",
         "desc": "Prosty generator plików pdf, zawierających czarno-białe druki wpłat bankowych. Aplikcja opiera się o JavaScript i powstała przy wykorzystaniu bibliotek takich jak: jQuery, jsPDF i UIkit 3.",
         "icons": [
             {
